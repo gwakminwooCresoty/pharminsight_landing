@@ -35,7 +35,7 @@ jobs:
       - name: Configure AWS (OIDC AssumeRole)
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::254475701965:oidc-provider/token.actions.githubusercontent.com
+          role-to-assume: arn:aws:iam::254475701965:role/pharminsight-github
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Sync assets (immutable)
