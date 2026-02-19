@@ -4,3 +4,7 @@
 - CloudFront 배포
 - GitHub Actions 설정
 - CI/CD 파이프라인 
+
+# 2026-02-20
+## 2차 배포
+- with: role-to-assume: 수정
