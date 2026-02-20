@@ -116,14 +116,6 @@ function Nav() {
             </span>
           </a>
           <nav className="hidden md:flex items-center gap-8" aria-label="주 메뉴">
-            {(["플랫폼 소개", "도입 사례", "파트너십"] as const).map(item => (
-              <a key={item} href="#"
-                className="text-[13px] font-medium transition-colors duration-200 focus:outline-none focus-visible:ring-1 focus-visible:ring-teal-500 rounded"
-                style={{ color: "rgba(255,255,255,0.42)" }}
-                onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.color = "rgba(255,255,255,0.85)"; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.color = "rgba(255,255,255,0.42)"; }}
-              >{item}</a>
-            ))}
           </nav>
           <button className="md:hidden p-1.5 rounded focus:outline-none focus-visible:ring-1 focus-visible:ring-teal-500"
             style={{ color: "rgba(255,255,255,0.5)" }}
