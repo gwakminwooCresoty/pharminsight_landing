@@ -112,7 +112,7 @@ function Nav() {
           <a href="#" className="flex items-center gap-2.5 focus:outline-none focus-visible:ring-1 focus-visible:ring-teal-500 rounded">
             <LogoMark />
             <span className="text-white font-semibold text-[15px]" style={{ letterSpacing: "-0.025em" }}>
-              팜인사이트
+              팜넥서스
             </span>
           </a>
           <nav className="hidden md:flex items-center gap-8" aria-label="주 메뉴">
@@ -234,20 +234,20 @@ function HeroSection() {
                 style={{ background: "#0d9488" }}
                 animate={{ opacity: [0.4, 1, 0.4] }} transition={{ duration: 1.4, repeat: Infinity }} />
               <span className="text-[10.5px] font-medium tracking-[0.14em] uppercase"
-                style={{ color: "rgba(13,148,136,0.9)" }}>약국 관리 플랫폼</span>
+                style={{ color: "rgba(13,148,136,0.9)" }}>약국 프랜차이즈 본부 운영 플랫폼</span>
             </motion.div>
 
             <motion.h1 className="font-bold leading-[1.04] mb-6"
               style={{ fontSize: "clamp(44px,6vw,72px)", letterSpacing: "-0.042em", color: "rgba(255,255,255,0.96)" }}
               initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: EASE }}>
-              흩어진 약국을
+              흩어진 가맹 약국을
               <br />
               <span style={{
                 background: "linear-gradient(88deg, #0d9488 0%, #10b981 100%)",
                 WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text"
               }}>
-                하나의 기준으로
+                본부의 기준 하나로
               </span>
             </motion.h1>
 
@@ -255,9 +255,9 @@ function HeroSection() {
               style={{ color: "rgba(255,255,255,0.4)", lineHeight: "1.72", letterSpacing: "-0.01em" }}
               initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.18, ease: EASE }}>
-              전국에 흩어진 약국 네트워크를 통합하고,
+              본부와 가맹 약국을 하나의 시스템으로 연결하고,
               <br />
-              운영의 표준을 정의하는 B2B 플랫폼입니다.
+              프랜차이즈 운영 표준을 정의하는 B2B 플랫폼입니다.
             </motion.p>
 
             <motion.div className="flex items-center gap-3"
@@ -265,7 +265,7 @@ function HeroSection() {
               transition={{ duration: 1, delay: 0.36 }}>
               <div className="h-px w-12 shrink-0" style={{ background: "rgba(255,255,255,0.1)" }} />
               <p className="text-[11px] tracking-wide" style={{ color: "rgba(255,255,255,0.26)" }}>
-                전국 1,200개 이상의 약국 네트워크가 신뢰하는 관리 표준
+                전국 1,200개 가맹 약국을 잇는 본부 운영 표준
               </p>
             </motion.div>
           </div>
@@ -298,10 +298,10 @@ function CinematicDivider() {
 
 // ─── Concept Cards ────────────────────────────────────────────────────────────
 const CONCEPTS = [
-  { Icon: Globe, title: "전국 약국, 한눈에", desc: "지도 위에 흩어진 전국 약국 현황을 하나의 화면으로 실시간 파악합니다.", accent: "#0d9488" },
-  { Icon: LayoutGrid, title: "거점별 현황 파악", desc: "각 약국의 운영 상태를 놓치지 않고 촘촘하게 모니터링합니다.", accent: "#10b981" },
-  { Icon: Layers, title: "표준화된 운영", desc: "모든 거점에 동일한 기준과 프로세스를 일관되게 적용합니다.", accent: "#059669" },
-  { Icon: BarChart3, title: "데이터 기반 결정", desc: "운영 수치가 명확한 근거가 되어 최적의 판단을 이끕니다.", accent: "#0d9488" },
+  { Icon: Globe, title: "본부 컨트롤타워", desc: "전국 가맹 약국의 매출·재고·운영 지표를 본부 한 화면에서 실시간으로 통제합니다.", accent: "#0d9488" },
+  { Icon: LayoutGrid, title: "가맹점 SV 모니터링", desc: "슈퍼바이저가 담당 가맹점의 운영 상태를 놓치지 않고 촘촘하게 관리합니다.", accent: "#10b981" },
+  { Icon: Layers, title: "본부 매뉴얼 일괄 적용", desc: "조제·복약지도·CS까지 본부 표준 매뉴얼을 모든 가맹점에 일관되게 배포합니다.", accent: "#059669" },
+  { Icon: BarChart3, title: "성과 기반 본부 결정", desc: "가맹점별 성과 데이터가 본부 의사결정과 인센티브의 명확한 근거가 됩니다.", accent: "#0d9488" },
 ] as const;
 
 function ConceptCard({ Icon, title, desc, accent, index }: {
@@ -339,10 +339,10 @@ function ConceptSection() {
           initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }} transition={{ duration: 0.7, ease: EASE }}>
           <p className="text-[10.5px] font-medium tracking-[0.16em] uppercase mb-3"
-            style={{ color: "rgba(13,148,136,0.65)" }}>플랫폼 가치</p>
+            style={{ color: "rgba(13,148,136,0.65)" }}>본부 운영 가치</p>
           <h2 className="font-bold"
             style={{ fontSize: "clamp(28px,4vw,44px)", letterSpacing: "-0.034em", lineHeight: "1.18", color: "rgba(255,255,255,0.92)" }}>
-            약국 관리의<br />새로운 기준
+            약국 프랜차이즈<br />본부 운영의 새로운 기준
           </h2>
         </motion.div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -359,7 +359,7 @@ function ConceptSection() {
 // Revenue: lower Y = higher revenue. Amber barely climbs, green shoots up.
 const CHART_CFG = {
   cost: {
-    title: "관리 비용",
+    title: "가맹점 운영 비용",
     badge: "▼ 도입 후 감소",
     amberPath: "M0,48 L100,48 C140,51 180,58 230,67 L320,76",
     greenPath: "M0,48 L100,48 C118,47 136,40 160,28 C188,14 244,8 320,6",
@@ -368,7 +368,7 @@ const CHART_CFG = {
     endCy: 6,
   },
   revenue: {
-    title: "매출 성장",
+    title: "가맹점 매출 성장",
     badge: "▲ 도입 후 상승",
     amberPath: "M0,84 L100,84 C145,82 185,79 245,75 L320,72",
     greenPath: "M0,84 L100,84 C118,84 132,78 150,66 C174,49 218,24 270,13 L320,10",
@@ -478,7 +478,7 @@ function GrowthChart({ type, delay }: { type: keyof typeof CHART_CFG; delay: num
             <svg width="18" height="4" viewBox="0 0 18 4">
               <line x1="0" y1="2" x2="18" y2="2" stroke="rgba(16,185,129,0.9)" strokeWidth="2" />
             </svg>
-            <span className="text-[9.5px]" style={{ color: "rgba(255,255,255,0.3)" }}>PharmInsight 도입</span>
+            <span className="text-[9.5px]" style={{ color: "rgba(255,255,255,0.3)" }}>PharmNexus 도입</span>
           </div>
         </div>
       </div>
@@ -494,12 +494,12 @@ function ShowcaseSection() {
           initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }} transition={{ duration: 0.7, ease: EASE }}>
           <p className="text-[10.5px] font-medium tracking-[0.16em] uppercase mb-3"
-            style={{ color: "rgba(16,185,129,0.65)" }}>도입 효과</p>
+            style={{ color: "rgba(16,185,129,0.65)" }}>프랜차이즈 도입 효과</p>
           <h2 className="font-bold"
             style={{ fontSize: "clamp(28px,4vw,44px)", letterSpacing: "-0.034em", lineHeight: "1.18", color: "rgba(255,255,255,0.92)" }}>
-            관리 비용은 낮추고,
+            본부의 운영 부담은 낮추고,
             <br />
-            매출 성장은 높입니다
+            가맹점의 매출은 끌어올립니다
           </h2>
         </motion.div>
 
@@ -513,8 +513,8 @@ function ShowcaseSection() {
           initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.25, ease: EASE }}>
           {[
-            { icon: "▼", value: "평균 41%", label: "관리 비용 감소", color: "#0d9488" },
-            { icon: "▲", value: "평균 34%", label: "매출 성장", color: "#10b981" },
+            { icon: "▼", value: "평균 41%", label: "본부 관리 비용 감소", color: "#0d9488" },
+            { icon: "▲", value: "평균 34%", label: "가맹점 매출 성장", color: "#10b981" },
           ].map(s => (
             <div key={s.label} className="rounded-xl px-6 py-5 flex items-center gap-4"
               style={{ background: "rgba(255,255,255,0.018)", border: "1px solid rgba(255,255,255,0.065)" }}>
@@ -547,16 +547,16 @@ function ClosingStatement() {
         <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} transition={{ duration: 0.9, ease: EASE }}>
           <p className="text-[10.5px] font-medium tracking-[0.16em] uppercase mb-6"
-            style={{ color: "rgba(13,148,136,0.52)" }}>PharmInsight</p>
+            style={{ color: "rgba(13,148,136,0.52)" }}>PharmNexus</p>
           <h2 className="font-bold"
             style={{ fontSize: "clamp(34px,5.5vw,60px)", letterSpacing: "-0.042em", lineHeight: "1.1", color: "rgba(255,255,255,0.92)" }}>
-            약국 관리의
+            약국 프랜차이즈의
             <br />
             <span style={{
               background: "linear-gradient(88deg, #0d9488 0%, #10b981 100%)",
               WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text"
             }}>
-              새로운 표준
+              새로운 운영 표준
             </span>
           </h2>
         </motion.div>
@@ -573,9 +573,9 @@ function SiteFooter() {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <div className="text-[13.5px] font-semibold mb-1"
-              style={{ color: "rgba(255,255,255,0.62)", letterSpacing: "-0.022em" }}>PharmInsight</div>
+              style={{ color: "rgba(255,255,255,0.62)", letterSpacing: "-0.022em" }}>PharmNexus</div>
             <p className="text-[11px]" style={{ color: "rgba(255,255,255,0.2)" }}>
-              © 2024 PharmInsight Inc. All rights reserved.
+              © 2024 PharmNexus Inc. All rights reserved.
             </p>
           </div>
           <nav className="flex flex-wrap gap-6" aria-label="푸터 링크">

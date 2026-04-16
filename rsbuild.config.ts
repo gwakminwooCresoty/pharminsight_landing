@@ -4,7 +4,7 @@ import { pluginReact } from '@rsbuild/plugin-react';
 // Docs: https://rsbuild.rs/config/
 export default defineConfig({
   html: {
-    title: '당신의 약국을 위한 팜인사이트',
+    title: '약국 프랜차이즈 본부를 위한 팜넥서스',
   },
   plugins: [pluginReact()],
 });
